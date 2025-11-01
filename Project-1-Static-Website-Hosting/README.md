@@ -17,28 +17,6 @@ Amazon Route 53 – for domain registration and DNS
 AWS Certificate Manager (ACM) – for enabling HTTPS
 IAM – for secure access contro
 
-Steps to Deploy
-
-Step 1: Create S3 Bucket
-
-Enable static website hosting.
-
-
-Step 2: Set Public Access Policy
-{
-  "Version": "2012-10-17",
-  "Statement": [{
-    "Sid": "PublicReadGetObject",
-    "Effect": "Allow",
-    "Principal": "*",
-    "Action": "s3:GetObject",
-    "Resource": "arn:aws:s3:::my-portfolio-site/*"
-  }]
-}
-
-
-
-
  Tools Used
 - Amazon S3
 - CloudFront
